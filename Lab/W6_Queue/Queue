@@ -1,0 +1,40 @@
+上課教的Single Link List(單向鏈結串列)實作一個Queue的ADT
+
+需要用到的function為
+
+typedef struct  node{
+        struct node *next;
+        int value;
+}node_t;
+
+typedef struct {
+        node_t *front;
+        node_t *rear;
+        int  size;    //size是指queue中最多node數量, size 訂5個
+        node_t headNode;
+}queue_t;
+
+
+create(  );    //裡面包含initial 及 size 
+
+isEmpty();
+isFull ();  
+
+deQueue(); //移除一個node
+enQueue();//添加一個node
+
+clear();//清空queue
+
+請皆以"指標型態"書寫 !!
+在ADT中不可出現printf !!
+
+Sample Output:
+
+請輸入選項(-1結束)：
+(1)Add node 
+(2)Remove node
+(3)clear
+$c>
+(1)於queue中添加一個node, 並印出整個queue
+(2)刪除queue中的node, 並印出刪除完後的整條queue
+(3)清空整個queue
